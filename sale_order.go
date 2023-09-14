@@ -6,81 +6,81 @@ import (
 
 // SaleOrder represents sale.order model.
 type SaleOrder struct {
-	LastUpdate               *Time      `xmlrpc:"__last_update,omptempty"`
-	AccessToken              *String    `xmlrpc:"access_token,omptempty"`
-	ActivityDateDeadline     *Time      `xmlrpc:"activity_date_deadline,omptempty"`
-	ActivityIds              *Relation  `xmlrpc:"activity_ids,omptempty"`
-	ActivityState            *Selection `xmlrpc:"activity_state,omptempty"`
-	ActivitySummary          *String    `xmlrpc:"activity_summary,omptempty"`
-	ActivityTypeId           *Many2One  `xmlrpc:"activity_type_id,omptempty"`
-	ActivityUserId           *Many2One  `xmlrpc:"activity_user_id,omptempty"`
-	AmountTax                *Float     `xmlrpc:"amount_tax,omptempty"`
-	AmountTotal              *Float     `xmlrpc:"amount_total,omptempty"`
-	AmountUntaxed            *Float     `xmlrpc:"amount_untaxed,omptempty"`
-	AnalyticAccountId        *Many2One  `xmlrpc:"analytic_account_id,omptempty"`
-	AutosalesConfigId        *Many2One  `xmlrpc:"autosales_config_id,omptempty"`
-	CampaignId               *Many2One  `xmlrpc:"campaign_id,omptempty"`
-	ClientOrderRef           *String    `xmlrpc:"client_order_ref,omptempty"`
-	CompanyId                *Many2One  `xmlrpc:"company_id,omptempty"`
-	ConfirmationDate         *Time      `xmlrpc:"confirmation_date,omptempty"`
-	ContributionsCreated     *Bool      `xmlrpc:"contributions_created,omptempty"`
-	CreateDate               *Time      `xmlrpc:"create_date,omptempty"`
-	CreateUid                *Many2One  `xmlrpc:"create_uid,omptempty"`
-	CurrencyId               *Many2One  `xmlrpc:"currency_id,omptempty"`
-	DateOrder                *Time      `xmlrpc:"date_order,omptempty"`
-	DeliveryCount            *Int       `xmlrpc:"delivery_count,omptempty"`
-	DisplayName              *String    `xmlrpc:"display_name,omptempty"`
-	FiscalPositionId         *Many2One  `xmlrpc:"fiscal_position_id,omptempty"`
-	Id                       *Int       `xmlrpc:"id,omptempty"`
-	Incoterm                 *Many2One  `xmlrpc:"incoterm,omptempty"`
-	InvoiceCount             *Int       `xmlrpc:"invoice_count,omptempty"`
-	InvoiceIds               *Relation  `xmlrpc:"invoice_ids,omptempty"`
-	InvoiceStatus            *Selection `xmlrpc:"invoice_status,omptempty"`
-	IsExpired                *Bool      `xmlrpc:"is_expired,omptempty"`
-	MediumId                 *Many2One  `xmlrpc:"medium_id,omptempty"`
-	MessageChannelIds        *Relation  `xmlrpc:"message_channel_ids,omptempty"`
-	MessageFollowerIds       *Relation  `xmlrpc:"message_follower_ids,omptempty"`
-	MessageIds               *Relation  `xmlrpc:"message_ids,omptempty"`
-	MessageIsFollower        *Bool      `xmlrpc:"message_is_follower,omptempty"`
-	MessageLastPost          *Time      `xmlrpc:"message_last_post,omptempty"`
-	MessageNeedaction        *Bool      `xmlrpc:"message_needaction,omptempty"`
-	MessageNeedactionCounter *Int       `xmlrpc:"message_needaction_counter,omptempty"`
-	MessagePartnerIds        *Relation  `xmlrpc:"message_partner_ids,omptempty"`
-	MessageUnread            *Bool      `xmlrpc:"message_unread,omptempty"`
-	MessageUnreadCounter     *Int       `xmlrpc:"message_unread_counter,omptempty"`
-	Name                     *String    `xmlrpc:"name,omptempty"`
-	Note                     *String    `xmlrpc:"note,omptempty"`
-	OpportunityId            *Many2One  `xmlrpc:"opportunity_id,omptempty"`
-	OrderLine                *Relation  `xmlrpc:"order_line,omptempty"`
-	Origin                   *String    `xmlrpc:"origin,omptempty"`
-	PartnerId                *Many2One  `xmlrpc:"partner_id,omptempty"`
-	PartnerInvoiceId         *Many2One  `xmlrpc:"partner_invoice_id,omptempty"`
-	PartnerShippingId        *Many2One  `xmlrpc:"partner_shipping_id,omptempty"`
-	PaymentTermId            *Many2One  `xmlrpc:"payment_term_id,omptempty"`
-	PickingIds               *Relation  `xmlrpc:"picking_ids,omptempty"`
-	PickingPolicy            *Selection `xmlrpc:"picking_policy,omptempty"`
-	PortalUrl                *String    `xmlrpc:"portal_url,omptempty"`
-	PricelistId              *Many2One  `xmlrpc:"pricelist_id,omptempty"`
-	ProcurementGroupId       *Many2One  `xmlrpc:"procurement_group_id,omptempty"`
-	ProductId                *Many2One  `xmlrpc:"product_id,omptempty"`
-	ProjectIds               *Relation  `xmlrpc:"project_ids,omptempty"`
-	ProjectProjectId         *Many2One  `xmlrpc:"project_project_id,omptempty"`
-	SourceId                 *Many2One  `xmlrpc:"source_id,omptempty"`
-	State                    *Selection `xmlrpc:"state,omptempty"`
-	TagIds                   *Relation  `xmlrpc:"tag_ids,omptempty"`
-	TasksCount               *Int       `xmlrpc:"tasks_count,omptempty"`
-	TasksIds                 *Relation  `xmlrpc:"tasks_ids,omptempty"`
-	TeamId                   *Many2One  `xmlrpc:"team_id,omptempty"`
-	TimesheetCount           *Float     `xmlrpc:"timesheet_count,omptempty"`
-	TimesheetIds             *Relation  `xmlrpc:"timesheet_ids,omptempty"`
-	UserId                   *Many2One  `xmlrpc:"user_id,omptempty"`
-	ValidityDate             *Time      `xmlrpc:"validity_date,omptempty"`
-	WarehouseId              *Many2One  `xmlrpc:"warehouse_id,omptempty"`
-	WebsiteMessageIds        *Relation  `xmlrpc:"website_message_ids,omptempty"`
-	WriteDate                *Time      `xmlrpc:"write_date,omptempty"`
-	WriteUid                 *Many2One  `xmlrpc:"write_uid,omptempty"`
-	XTitle                   *String    `xmlrpc:"x_title,omptempty"`
-	XTitleReadOnly           *String    `xmlrpc:"x_title_read_only,omptempty"`
+	LastUpdate *Time `xmlrpc:"__last_update,omptempty"`
+	// AccessToken              *String    `xmlrpc:"access_token,omptempty"`
+	// ActivityDateDeadline     *Time      `xmlrpc:"activity_date_deadline,omptempty"`
+	// ActivityIds              *Relation  `xmlrpc:"activity_ids,omptempty"`
+	// ActivityState            *Selection `xmlrpc:"activity_state,omptempty"`
+	// ActivitySummary          *String    `xmlrpc:"activity_summary,omptempty"`
+	// ActivityTypeId           *Many2One  `xmlrpc:"activity_type_id,omptempty"`
+	// ActivityUserId           *Many2One  `xmlrpc:"activity_user_id,omptempty"`
+	AmountTax     *Float `xmlrpc:"amount_tax,omptempty"`
+	AmountTotal   *Float `xmlrpc:"amount_total,omptempty"`
+	AmountUntaxed *Float `xmlrpc:"amount_untaxed,omptempty"`
+	// AnalyticAccountId        *Many2One  `xmlrpc:"analytic_account_id,omptempty"`
+	// AutosalesConfigId        *Many2One  `xmlrpc:"autosales_config_id,omptempty"`
+	CampaignId           *Many2One  `xmlrpc:"campaign_id,omptempty"`
+	ClientOrderRef       *String    `xmlrpc:"client_order_ref,omptempty"`
+	CompanyId            *Many2One  `xmlrpc:"company_id,omptempty"`
+	ConfirmationDate     *Time      `xmlrpc:"confirmation_date,omptempty"`
+	ContributionsCreated *Bool      `xmlrpc:"contributions_created,omptempty"`
+	CreateDate           *Time      `xmlrpc:"create_date,omptempty"`
+	CreateUid            *Many2One  `xmlrpc:"create_uid,omptempty"`
+	CurrencyId           *Many2One  `xmlrpc:"currency_id,omptempty"`
+	DateOrder            *Time      `xmlrpc:"date_order,omptempty"`
+	DeliveryCount        *Int       `xmlrpc:"delivery_count,omptempty"`
+	DisplayName          *String    `xmlrpc:"display_name,omptempty"`
+	FiscalPositionId     *Many2One  `xmlrpc:"fiscal_position_id,omptempty"`
+	Id                   *Int       `xmlrpc:"id,omptempty"`
+	Incoterm             *Many2One  `xmlrpc:"incoterm,omptempty"`
+	InvoiceCount         *Int       `xmlrpc:"invoice_count,omptempty"`
+	InvoiceIds           *Relation  `xmlrpc:"invoice_ids,omptempty"`
+	InvoiceStatus        *Selection `xmlrpc:"invoice_status,omptempty"`
+	IsExpired            *Bool      `xmlrpc:"is_expired,omptempty"`
+	MediumId             *Many2One  `xmlrpc:"medium_id,omptempty"`
+	// MessageChannelIds        *Relation  `xmlrpc:"message_channel_ids,omptempty"`
+	// MessageFollowerIds       *Relation  `xmlrpc:"message_follower_ids,omptempty"`
+	// MessageIds               *Relation  `xmlrpc:"message_ids,omptempty"`
+	// MessageIsFollower        *Bool      `xmlrpc:"message_is_follower,omptempty"`
+	// MessageLastPost          *Time      `xmlrpc:"message_last_post,omptempty"`
+	// MessageNeedaction        *Bool      `xmlrpc:"message_needaction,omptempty"`
+	// MessageNeedactionCounter *Int       `xmlrpc:"message_needaction_counter,omptempty"`
+	// MessagePartnerIds        *Relation  `xmlrpc:"message_partner_ids,omptempty"`
+	// MessageUnread            *Bool      `xmlrpc:"message_unread,omptempty"`
+	// MessageUnreadCounter     *Int       `xmlrpc:"message_unread_counter,omptempty"`
+	Name              *String    `xmlrpc:"name,omptempty"`
+	Note              *String    `xmlrpc:"note,omptempty"`
+	OpportunityId     *Many2One  `xmlrpc:"opportunity_id,omptempty"`
+	OrderLine         *Relation  `xmlrpc:"order_line,omptempty"`
+	Origin            *String    `xmlrpc:"origin,omptempty"`
+	PartnerId         *Many2One  `xmlrpc:"partner_id,omptempty"`
+	PartnerInvoiceId  *Many2One  `xmlrpc:"partner_invoice_id,omptempty"`
+	PartnerShippingId *Many2One  `xmlrpc:"partner_shipping_id,omptempty"`
+	PaymentTermId     *Many2One  `xmlrpc:"payment_term_id,omptempty"`
+	PickingIds        *Relation  `xmlrpc:"picking_ids,omptempty"`
+	PickingPolicy     *Selection `xmlrpc:"picking_policy,omptempty"`
+	PortalUrl         *String    `xmlrpc:"portal_url,omptempty"`
+	PricelistId       *Many2One  `xmlrpc:"pricelist_id,omptempty"`
+	// ProcurementGroupId       *Many2One  `xmlrpc:"procurement_group_id,omptempty"`
+	ProductId *Many2One `xmlrpc:"product_id,omptempty"`
+	// ProjectIds               *Relation  `xmlrpc:"project_ids,omptempty"`
+	// ProjectProjectId         *Many2One  `xmlrpc:"project_project_id,omptempty"`
+	SourceId *Many2One  `xmlrpc:"source_id,omptempty"`
+	State    *Selection `xmlrpc:"state,omptempty"`
+	// TagIds                   *Relation  `xmlrpc:"tag_ids,omptempty"`
+	// TasksCount               *Int       `xmlrpc:"tasks_count,omptempty"`
+	// TasksIds                 *Relation  `xmlrpc:"tasks_ids,omptempty"`
+	TeamId *Many2One `xmlrpc:"team_id,omptempty"`
+	// TimesheetCount           *Float     `xmlrpc:"timesheet_count,omptempty"`
+	// TimesheetIds             *Relation  `xmlrpc:"timesheet_ids,omptempty"`
+	UserId *Many2One `xmlrpc:"user_id,omptempty"`
+	// ValidityDate             *Time      `xmlrpc:"validity_date,omptempty"`
+	WarehouseId *Many2One `xmlrpc:"warehouse_id,omptempty"`
+	// WebsiteMessageIds        *Relation  `xmlrpc:"website_message_ids,omptempty"`
+	// WriteDate                *Time      `xmlrpc:"write_date,omptempty"`
+	// WriteUid                 *Many2One  `xmlrpc:"write_uid,omptempty"`
+	// XTitle                   *String    `xmlrpc:"x_title,omptempty"`
+	// XTitleReadOnly           *String    `xmlrpc:"x_title_read_only,omptempty"`
 }
 
 // SaleOrders represents array of sale.order model.
