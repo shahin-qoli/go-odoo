@@ -79,24 +79,6 @@ type ProductTemplate struct {
 	PurchaseMethod                         *Selection `xmlrpc:"purchase_method,omptempty"`
 	PurchaseOk                             *Bool      `xmlrpc:"purchase_ok,omptempty"`
 	QtyAvailable                           *Float     `xmlrpc:"qty_available,omptempty"`
-	Rental                                 *Bool      `xmlrpc:"rental,omptempty"`
-	ReorderingMaxQty                       *Float     `xmlrpc:"reordering_max_qty,omptempty"`
-	ReorderingMinQty                       *Float     `xmlrpc:"reordering_min_qty,omptempty"`
-	ResponsibleId                          *Many2One  `xmlrpc:"responsible_id,omptempty"`
-	RouteFromCategIds                      *Relation  `xmlrpc:"route_from_categ_ids,omptempty"`
-	RouteIds                               *Relation  `xmlrpc:"route_ids,omptempty"`
-	SaleDelay                              *Float     `xmlrpc:"sale_delay,omptempty"`
-	SaleLineWarn                           *Selection `xmlrpc:"sale_line_warn,omptempty"`
-	SaleLineWarnMsg                        *String    `xmlrpc:"sale_line_warn_msg,omptempty"`
-	SaleOk                                 *Bool      `xmlrpc:"sale_ok,omptempty"`
-	SalesCount                             *Int       `xmlrpc:"sales_count,omptempty"`
-	SellerIds                              *Relation  `xmlrpc:"seller_ids,omptempty"`
-	Sequence                               *Int       `xmlrpc:"sequence,omptempty"`
-	ServicePolicy                          *Selection `xmlrpc:"service_policy,omptempty"`
-	ServiceTracking                        *Selection `xmlrpc:"service_tracking,omptempty"`
-	ServiceType                            *Selection `xmlrpc:"service_type,omptempty"`
-	StandardPrice                          *Float     `xmlrpc:"standard_price,omptempty"`
-	SupplierTaxesId                        *Relation  `xmlrpc:"supplier_taxes_id,omptempty"`
 	TaxesId                                *Relation  `xmlrpc:"taxes_id,omptempty"`
 	Tracking                               *Selection `xmlrpc:"tracking,omptempty"`
 	Type                                   *Selection `xmlrpc:"type,omptempty"`
@@ -107,10 +89,6 @@ type ProductTemplate struct {
 	VirtualAvailable                       *Float     `xmlrpc:"virtual_available,omptempty"`
 	Volume                                 *Float     `xmlrpc:"volume,omptempty"`
 	WarehouseId                            *Many2One  `xmlrpc:"warehouse_id,omptempty"`
-	WebsiteMessageIds                      *Relation  `xmlrpc:"website_message_ids,omptempty"`
-	Weight                                 *Float     `xmlrpc:"weight,omptempty"`
-	WriteDate                              *Time      `xmlrpc:"write_date,omptempty"`
-	WriteUid                               *Many2One  `xmlrpc:"write_uid,omptempty"`
 }
 
 // ProductTemplates represents array of product.template model.
